@@ -12,6 +12,7 @@ var bcrypt = require('bcryptjs');
 var session = require('express-session');
 var mongoose = require('mongoose');
 //const MongoClient = require('mongodb').MongoClient;
+//Mongo DB connection
 //const client = new MongoClient(uri, { useNewUrlParser: true });
 const uri = "mongodb+srv://abhi:0123@cluster0.hmvf8.mongodb.net/users?retryWrites=true&w=majority";
 try {
