@@ -1,0 +1,26 @@
+extends index
+
+block content
+  h1 Insert Problem below
+  //Insert form
+  form(method='POST' action='/insert')
+    div
+        h2 Requester Name
+        input(type='text' name='requesterName')
+    div
+        h2 Description
+        input(type='text' name='description')
+    div
+        h2 Address
+        input(type='text' name='address')
+    div
+        h2 City
+        input(type='text' name='city')
+    div
+        h2 State
+        input(type='text' name='state')
+    div
+        h2 Mobile
+        input(type='int' name='mobile')
+    div
+        button(type='submit' value='Submit') Submit

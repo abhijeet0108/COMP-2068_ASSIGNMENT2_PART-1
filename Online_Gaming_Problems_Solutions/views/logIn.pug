@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    h1 Login Page
+    //Insert form
+    form(method='POST' action='/login')
+        div
+            h2 Insert username
+            input#username(type='text' name='username')
+        div
+            h3 Insert password
+            input#username(type='password' name='password')
+        div
+            button(type='submit' value='login') Login
+
+    //-link to the footer.pug file in the partials folder in views
+    include partials/footer

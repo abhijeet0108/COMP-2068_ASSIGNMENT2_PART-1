@@ -1,0 +1,89 @@
+extends layout
+block content
+    //-
+     File Name: index.pug
+     Author's name:  Abhijeet Rana
+     Website name: Personal Portfolio
+     File description: This file is the base of the homepage of the website and contains after header.pug section for carousel part by extending the layout.pug file.
+    //
+    link(rel="stylesheet" type="text/css" href="/stylesheets/main.css") 
+    <!-- coding for carousel is taken from bootstrap -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/pubg.jpg" alt="man" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/gta5.jpg" alt="beach" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/game.jpg" alt="road" width="1100" height="500">
+            </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <div class="container">
+    <!--Introduction Section-->
+        <div class="jumbotron">
+          <h3 class="text-center"><u>About Us</u></h3>
+            <p>GPS Service is a leading chain of multi-brand Electronics and Electrical serviceworkshops offering all gaming solutions for all different problems. We focus on enhancing your uses experience by offering world-classGaming problems solving and maintenance services. Our sole mission is to provide full customer satisfaction by solving their whole problem which is relative to any game type
+
+                With well-equipped Electronic Appliances service centres and fully trained mechanics and gaming programmers, we
+                provide quality
+                services with excellent packages that are designed to offer you great savings.
+
+                Our state-of-art workshops are conveniently located in many cities across the country. Now you
+                can book
+                your service online by doing Registration.
+            </p>
+        </div>
+    </div>
+    <div class="py-5">
+        <h2 class = "text-center"><u>Our Services</u></h2>
+    </div>
+    <div class  = "container-fluid">
+      <div class = "row">
+        <div class = "col-lg-4 col-md-5 col-12">
+            <div class="card">
+                <img class="card-img-top" src="images/hardware.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Hardware Issues</h4>
+                    <p class="card-text">Any issue related to maintainence of gaming components can be modified and fixed. </p>
+                </div>
+            </div>
+        </div>
+        <div class = "col-lg-4 col-md-3 col-12">
+            <div class="card">
+                <img class="card-img-top" src="images/software.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Software Issues</h4>
+                    <p class="card-text">Facing any hurdle while opening and playing online games. It might be related to programming issues.</p>
+                </div>
+            </div>
+        </div>
+        <div class = "col-lg-4 col-md-5 col-12">
+            <div class="card">
+                <img class="card-img-top" src="images/gamers.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Other important issues</h4>
+                    <p class="card-text">Like maintenance issues and broken parts of the game components can be modified and rebuilt for gaming purposes.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    include partials/footer.pug
+    

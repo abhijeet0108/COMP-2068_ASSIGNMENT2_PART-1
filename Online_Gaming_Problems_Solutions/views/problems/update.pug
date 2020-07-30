@@ -1,0 +1,27 @@
+extends index
+
+block content
+  h1 Update Article below
+  //Insert form
+  form(method='POST' action='/update')
+    div
+        h2 Requester Name
+        input(type='text' name='name' value=problem.requesterName)
+    div
+        h2 Description
+        input(type='text' name='description' value=problem.description)
+    div
+        h2 Address
+        input(type='text' name='name' value=problem.address)
+    div
+        h2 City
+        input(type='text' name='description' value=problem.city)
+    div
+        h2 State
+        input(type='text' name='name' value=problem.state)
+    div
+        h2 Mobile
+        input(type='text' name='description' value=problem.mobile)
+    div
+        input(type='hidden' name='id' value=problem.id)
+        button(type='submit' value='Submit') Submit

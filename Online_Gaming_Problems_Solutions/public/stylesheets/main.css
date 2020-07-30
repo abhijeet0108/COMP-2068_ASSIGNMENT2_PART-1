@@ -1,0 +1,28 @@
+/*
+  * File Name: main.css
+  * Author's name:  Abhijeet Rana
+  * Website name: Personal Portfolio
+  * File description: This CSS file consists of all the css needed for this website and I needed very less CSS for this project. In this CSS file, mostly I simply tried to design the carousel part and hovering the links.
+*/
+* {              /* css for whole body */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel-inner img {  /* css for carousel's image for setting its height and width */
+    width: 100%;
+    height: 90vh;
+}
+a {
+    color: black;
+}
+
+.active {
+    color: white;
+    background-color: #DC3545;
+}
+
+a:hover {          /* css for changing color of the link item when it is hovered by the user */
+    color: #f26571;
+}

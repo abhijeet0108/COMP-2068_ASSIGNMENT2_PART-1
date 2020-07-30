@@ -1,0 +1,32 @@
+block content
+  //Check for any articles being passed in from the server
+  if (problems && problems.length)
+    table
+        thead
+            th Insert
+            th Requester Name
+            th Description
+            th Address
+            th City
+            th State
+            th Mobile
+            th Update
+            th Delete
+        tbody
+            //If there is articles, create a row and column for each article
+            each problem in problems
+                tr
+                    a(href='/insert/'+problem.id) Insert
+                    td= problem.requesterName
+                    td= problem.description
+                    td= problem.address
+                    td= problem.city
+                    td= problem.state
+                    td= problem.mobile
+                        a(href='/update/'+problem.id) Update
+                    td
+                        form(method='POST' action='/delete/'+problem.id)
+                            button(type='submit') Delete
+  else
+    a(href='/insert/'+problem.id) Insert
+    h1 No Problems!
